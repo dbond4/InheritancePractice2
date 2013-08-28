@@ -12,6 +12,16 @@ public class SalariedEmployee extends Employee{
     private double yearlyPay;
     private int vacationDays;
     private int officeNumber;
+    
+    public void takeVacation(){
+        System.out.println("See you in 2 weeks!");
+    }
+    public void attendMeeting(){
+        System.out.println("Snooze time.");
+    }
+    public void pretendToWork(){
+        System.out.println("15 minutes of real work.");
+    }
 
     /**
      * @return the yearlyPay

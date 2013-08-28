@@ -11,6 +11,10 @@ package concretePractice;
 public class HourlyEmployee extends Employee{
     private int hourlyPay;
     private int cubicleNumber;
+    
+    public void payHourlyWadge(){
+        System.out.println("Is that before... or after taxes??");
+    }
 
     /**
      * @return the hourlyPay

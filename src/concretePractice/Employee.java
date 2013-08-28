@@ -15,6 +15,15 @@ public class Employee {
     private int hireDate;
     private double employeeNumber;
 
+    public void hireEmployee(){
+        System.out.println("Your hired, gab a seat.");
+    }
+    public void fireEmployee(){
+        System.out.println("Clean out your desk, YOUR FIRED!!");
+    }
+    public void trainEmployee(){
+        System.out.println("Grab a pen and paper. Write that down.");
+    }
     /**
      * @return the firstName
      */

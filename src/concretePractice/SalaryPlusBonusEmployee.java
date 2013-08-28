@@ -11,6 +11,9 @@ package concretePractice;
 public class SalaryPlusBonusEmployee extends SalariedEmployee{
     private int yearlyBonus;
 
+    public void yearlyBonus(){
+        System.out.println("Clark gets a swimming pool!");
+    }
     /**
      * @return the yearlyBonus
      */
