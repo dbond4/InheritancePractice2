@@ -9,7 +9,7 @@ package interfacePractice;
  * @author F03 H4MM3R
  */
 public interface Employee {
-    public void hireEmployee();
-    public void fireEmployee();
-    public void trainEmployee();
+    public abstract void hireEmployee();
+    public abstract void fireEmployee();
+    public abstract void trainEmployee();
     }
