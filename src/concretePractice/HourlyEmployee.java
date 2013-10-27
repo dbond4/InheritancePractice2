@@ -4,43 +4,53 @@
  */
 package concretePractice;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author F03 H4MM3R
  */
 public class HourlyEmployee extends Employee{
-    private int hourlyPay;
-    private int cubicleNumber;
+    private double hourlyPay;
+    private double hoursWorked;
+    private double wadge;
     
-    public void payHourlyWadge(){
-        System.out.println("Is that before... or after taxes??");
+    @Override
+    public double payEmployee(){
+        wadge = hourlyPay * hoursWorked;
+        return wadge;
+    
     }
 
+    public double getHoursWorked() {
+        return hoursWorked;
+    }
+
+    public void NumberOfHoursWorked() {
+        hoursWorked = Double.parseDouble(JOptionPane.showInputDialog("How many hours did you work?"));
+    }
+    
     /**
      * @return the hourlyPay
      */
-    public int getHourlyPay() {
+    public double getHourlyPay() {
         return hourlyPay;
     }
 
     /**
      * @param hourlyPay the hourlyPay to set
      */
-    public void setHourlyPay(int hourlyPay) {
+    public void AmountOfHourlyPay() {
+        hourlyPay = Double.parseDouble(JOptionPane.showInputDialog("What is your wadge paid per hour?"));
+    }
+
+    public void setHourlyPay(double hourlyPay) {
         this.hourlyPay = hourlyPay;
     }
 
-    /**
-     * @return the cubicleNumber
-     */
-    public int getCubicleNumber() {
-        return cubicleNumber;
+    public void setHoursWorked(double hoursWorked) {
+        this.hoursWorked = hoursWorked;
     }
-
-    /**
-     * @param cubicleNumber the cubicleNumber to set
-     */
-    public void setCubicleNumber(int cubicleNumber) {
-        this.cubicleNumber = cubicleNumber;
-    }
+    
+    
 }

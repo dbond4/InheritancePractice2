@@ -9,22 +9,35 @@ package concretePractice;
  * @author F03 H4MM3R
  */
 public class SalaryPlusBonusEmployee extends SalariedEmployee{
-    private int yearlyBonus;
+    private double yearlyBonus;
+    private double yearlyPay;
+    private double wadge;
 
-    public void yearlyBonus(){
-        System.out.println("Clark gets a swimming pool!");
+    @Override
+    public double payEmployee(){
+        wadge = yearlyPay + yearlyBonus;
+        return wadge;   
     }
+
+    public double getWadge() {
+        return wadge;
+    }
+
+    public void setWadge(double wadge) {
+        this.wadge = wadge;
+    }
+    
     /**
      * @return the yearlyBonus
      */
-    public int getYearlyBonus() {
+    public double getYearlyBonus() {
         return yearlyBonus;
     }
 
     /**
      * @param yearlyBonus the yearlyBonus to set
      */
-    public void setYearlyBonus(int yearlyBonus) {
+    public void setYearlyBonus(double yearlyBonus) {
         this.yearlyBonus = yearlyBonus;
     }
 }

@@ -9,20 +9,15 @@ package concretePractice;
  * @author F03 H4MM3R
  */
 public class SalariedEmployee extends Employee{
-    private double yearlyPay;
-    private int vacationDays;
-    private int officeNumber;
     
-    public void takeVacation(){
-        System.out.println("See you in 2 weeks!");
+    private double yearlyPay;
+    private double wadge;
+    
+    public double payEmoployee(){
+        wadge = yearlyPay;
+        return wadge;
     }
-    public void attendMeeting(){
-        System.out.println("Snooze time.");
-    }
-    public void pretendToWork(){
-        System.out.println("15 minutes of real work.");
-    }
-
+    
     /**
      * @return the yearlyPay
      */
@@ -35,33 +30,5 @@ public class SalariedEmployee extends Employee{
      */
     public void setYearlyPay(double yearlyPay) {
         this.yearlyPay = yearlyPay;
-    }
-
-    /**
-     * @return the vacationDays
-     */
-    public int getVacationDays() {
-        return vacationDays;
-    }
-
-    /**
-     * @param vacationDays the vacationDays to set
-     */
-    public void setVacationDays(int vacationDays) {
-        this.vacationDays = vacationDays;
-    }
-
-    /**
-     * @return the officeNumber
-     */
-    public int getOfficeNumber() {
-        return officeNumber;
-    }
-
-    /**
-     * @param officeNumber the officeNumber to set
-     */
-    public void setOfficeNumber(int officeNumber) {
-        this.officeNumber = officeNumber;
     }
 }
